@@ -1,4 +1,10 @@
+using Hub.Core;
+
 var builder = WebApplication.CreateBuilder(args);
+
+// Configure strongly-typed settings
+builder.Services.Configure<DatabaseSettings>(
+    builder.Configuration.GetSection("DatabaseSettings"));
 
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
