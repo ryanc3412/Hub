@@ -1,0 +1,44 @@
+# Visual Studio / .NET
+bin/
+obj/
+**/bin/
+**/obj/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio folders
+.vs/
+.vscode/
+
+# Rider
+.idea/
+
+# NuGet
+*.nupkg
+packages/
+
+# Build artifacts
+artifacts/
+
+# OS generated files
+.DS_Store
+
+# Local development settings / secrets
+appsettings.Development.json
+appsettings.*.Local.json
+secrets.json
+
+# JetBrains Rider
+*.sln.iml
+
+# VS Code workspace files
+*.code-workspace
+
+# Ignore coverage and test output
+coverage/
+TestResults/
+*.csproj.lscache
