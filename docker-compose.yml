@@ -3,10 +3,10 @@ services:
     image: mysql:8.0
     container_name: my_dotnet_project_db
     environment:
-      MYSQL_ROOT_PASSWORD: my_super_secret_root_password
-      MYSQL_DATABASE: MyDotnetAppDb
-      MYSQL_USER: dotnet_user
-      MYSQL_PASSWORD: dotnet_password
+      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${DB_NAME}
+      MYSQL_USER: ${DB_USER}
+      MYSQL_PASSWORD: ${DB_PASSWORD}
     ports:
       - "3306:3306"
     volumes:
